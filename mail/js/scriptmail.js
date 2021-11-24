@@ -20,6 +20,9 @@ button.addEventListener("click", function () {
         if (find == true) {
             container.append(div);
             div.innerHTML = "la tua email è nella lista, puoi proseguire";
+        } else if ( find == ''){
+            container.append(div);
+            div.innerHTML = "non hai inserito dati, riprova";
         } else {
             container.append(div);
             div.innerHTML = "la tua email non è nella lista, riprova";
